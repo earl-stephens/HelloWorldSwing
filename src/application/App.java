@@ -16,12 +16,17 @@ public class App {
 		//function is code not associated with a class/object
 		SwingUtilities.invokeLater(() -> {
 		
-			JFrame mainFrame = new JFrame();
-			mainFrame.setSize(600, 400);
+			/*JFrame() constructor takes a String, which becomes the
+			 * title of the window
+			 */
+			//JFrame mainFrame = new JFrame("Test Swing app");
+			//MainFrame mainFrame = new MainFrame("Test Swing app");
+			//mainFrame.setSize(600, 400);
 			//tells program to quit when the window is closed.
 			//closes the event loop for the window
-			mainFrame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-			mainFrame.setVisible(true);
+			//mainFrame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+			//mainFrame.setVisible(true);
+			new MainFrame("Test Swing app");
 		});
 		
 	}
